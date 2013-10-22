@@ -1,0 +1,54 @@
+#Sneh Munshi
+#CS 1301 A01
+#GT ID: 903004069, smunshi6@gatech.edu
+#I worked on the homework assisgnment alone, using only this semester's course material.
+
+from Graphics import *
+win = Window("Face",600,600)
+
+#We start by drawing the circular face.
+circle = Circle ((300,300),200)
+circle.fill = Color ("white")
+circle.draw (win)
+
+#Now, we use two ovals with small circles inside them to draw the eyes.
+oval1 = Oval ((200,250),20,40)
+oval1.color = Color ("Yellow")
+oval1.draw (win)
+
+oval2 = Oval ((400,250),20,40)
+oval2.color = Color ("Yellow")
+oval2.draw (win)
+
+circle1 = Circle ((200,250),4)
+circle1.fill = Color ("Black")
+circle1.draw (win)
+
+circle2 = Circle ((400,250),4)
+circle2.fill = Color ("Black")
+circle2.draw (win)
+
+#We use straight lines to draw the nose.
+line1 = Line ((300,250),(300,350))
+line1.outline = Color ("Blue")
+line1.draw (win)
+
+line2 = Line ((300,350),(330,310))
+line2.outline = Color ("Blue")
+line2.draw (win)
+
+#Next, we use an arc to draw the mouth.
+arc = Arc ((300,380),80,0,180)
+arc.border = 2
+arc.outline = Color ("Red")
+arc.draw (win)
+
+#Finally, we use a polygon and circle to draw the tattoo.
+tattoo1 = Polygon ((180,320),(200,360),(220,320))
+tattoo1.fill = Color ("Green")
+tattoo1.draw (win)
+
+tattoo2 = Circle ((200,335),10)
+tattoo2.fill = Color("Pink")
+tattoo2.draw (win)
+
